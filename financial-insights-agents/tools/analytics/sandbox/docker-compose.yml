@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  python-sandbox:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python-analysis-sandbox:latest
+    container_name: analysis-sandbox
+    # Security settings
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    # Network isolation
+    network_mode: none
+    # Volumes for data exchange
+    volumes:
+      - ./data:/sandbox/data:ro
+      - ./outputs:/sandbox/outputs:rw
+      - /tmp:/tmp:rw
+    # Runtime limits
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MPLBACKEND=Agg
+    # Timeout protection (handled by executor)
+    stop_grace_period: 5s
