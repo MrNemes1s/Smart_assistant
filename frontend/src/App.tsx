@@ -169,7 +169,7 @@ function App() {
             ☰
           </button>
           <h1>Smart Assist</h1>
-          <div className="header-subtitle">Financial Insights Agent</div>
+          <div className="header-subtitle">Analysis Agent</div>
         </div>
 
         {/* Messages */}
@@ -179,7 +179,7 @@ function App() {
               <Bot size={64} className="welcome-icon" />
               <h2>Welcome to Smart Assist</h2>
               <p>
-                I'm your financial insights assistant. I can help you analyze portfolios,
+                I'm your analysis assistant. I can help you analyze portfolios,
                 calculate returns, assess risk, and answer questions about your financial data.
               </p>
               <div className="suggestions">

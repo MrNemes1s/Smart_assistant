@@ -240,7 +240,7 @@ async def process_with_agent(message: str, session_id: str) -> str:
     elif "risk" in message.lower():
         return "Your portfolio has a beta of 0.95 and a Sharpe ratio of 1.8, indicating good risk-adjusted returns. The current allocation is 60% stocks, 30% bonds, and 10% cash."
     else:
-        return f"I understand you're asking about: '{message}'. I'm a financial insights agent that can help you with portfolio analysis, performance metrics, risk assessment, and market comparisons. What would you like to know?"
+        return f"I understand you're asking about: '{message}'. I'm an analysis agent that can help you with portfolio analysis, performance metrics, risk assessment, and market comparisons. What would you like to know?"
 
 
 if __name__ == "__main__":

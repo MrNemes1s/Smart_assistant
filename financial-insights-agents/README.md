@@ -1,6 +1,6 @@
-# Financial Insights Multi-Agent System
+# Multi-Agent Analysis System
 
-A production-ready multi-agent system for financial data analysis using Microsoft Agent Framework, Claude via Azure AI Foundry, and MSSQL.
+A production-ready multi-agent system for data analysis using Microsoft Agent Framework, Claude via Azure AI Foundry, and MSSQL.
 
 ## Architecture
 
@@ -8,7 +8,7 @@ A production-ready multi-agent system for financial data analysis using Microsof
 User → FastAPI REST API → Agent Hub (Orchestrator)
                              ├─→ SQL Agent (MCP → MSSQL)
                              ├─→ Data Analyst Agent (Code Interpreter)
-                             └─→ Domain Expert Agent (Financial Knowledge)
+                             └─→ Domain Expert Agent (Domain Knowledge)
 ```
 
 ## Features
@@ -25,7 +25,7 @@ User → FastAPI REST API → Agent Hub (Orchestrator)
 🚧 Base Agent Class with Azure AI Foundry integration
 🚧 SQL Agent (Natural language to SQL)
 🚧 Data Analyst Agent (Statistical analysis + charts)
-🚧 Domain Expert Agent (Financial metrics + knowledge base)
+🚧 Domain Expert Agent (Domain metrics + knowledge base)
 
 ### Planned (Phase 4-7)
 📋 Orchestration hub and router
@@ -51,7 +51,7 @@ financial-insights-agents/
 ├── agents/                      # Agent implementations
 │   ├── sql_agent/              # SQL query generation agent
 │   ├── data_analyst_agent/     # Statistical analysis agent
-│   └── domain_expert_agent/    # Financial domain expert
+│   └── domain_expert_agent/    # Domain expert
 ├── orchestration/               # Agent coordination
 ├── mcp_servers/                 # MCP server implementations
 │   ├── mssql_server/           # MSSQL MCP server
@@ -269,7 +269,7 @@ Once agents are implemented, the system will handle queries like:
 1. Implement base agent class with Azure AI Foundry integration
 2. Build SQL Agent with NL2SQL capabilities
 3. Create Data Analyst Agent with code interpreter
-4. Develop Domain Expert Agent with financial knowledge base
+4. Develop Domain Expert Agent with domain knowledge base
 5. Implement orchestration hub
 6. Build FastAPI REST API
 7. Deploy to Azure AI Foundry

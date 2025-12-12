@@ -7,7 +7,7 @@ A modern web application for financial insights powered by AI agents. Smart Assi
 Smart Assist is a full-stack application that combines:
 - **Frontend**: React + TypeScript chat interface
 - **Backend**: FastAPI REST API with WebSocket support
-- **Agent System**: Multi-agent financial insights engine
+- **Agent System**: Multi-agent analysis engine
 - **Database**: MSSQL for financial data storage
 
 ## Quick Start
@@ -79,7 +79,7 @@ Smart_assitant/
 ### Agent System
 - **SQL Agent**: Natural language to SQL queries
 - **Data Analyst Agent**: Statistical analysis
-- **Domain Expert Agent**: Financial insights
+- **Domain Expert Agent**: Domain insights
 - Multi-agent orchestration
 
 ### Financial Analysis
@@ -105,7 +105,7 @@ Smart_assitant/
   - Security best practices
 
 ### Agent System
-- [Financial Insights Agents](financial-insights-agents/README.md) - Agent architecture
+- [Analysis Agents](financial-insights-agents/README.md) - Agent architecture
 
 ## Technology Stack
 
